@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="fr">
+
+  <head>
+    <title>Résultat des Trains</title>
+    <link rel="stylesheet" href="../static/RechercheTrainsCSS.css">
+  </head>
+
+  <body>
+    <h1>Résultat de votre recherche:</h1>
+    <br />
+    <p>Le trajet allant de la gare de {{villeDepart}} jusqu'a la gare de {{villeArrive}} d'une
+      distance de {{distance}}km coutera le prix de {{prix}}{{laDevise}}.</p>
+    <br />
+    <h1>Trajets Disponibles:</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Date et heure des différents voyages</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for voyage in voyages %}
+        <tr>
+          <td>{{voyage}}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+
+  </body>
+
+</html>

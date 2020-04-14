@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+  <title>Recherche de Train</title>
+  <link rel="stylesheet" href="../static/indexCSS.css">
+</head>
+
+<body>
+  <h1>Rechercher des trains</h1>
+  <form action="/RechercheTrains" method="post">
+    <label for="villedepart">Ville de Départ :</label>
+    <input type="text"  id="villedepart" name="villedepart" required/>
+    <br />
+    <br />
+    <label for="villearrive">Ville d'arrivée :</label>
+    <input type="text" id="villearrive" name="villearrive" required/>
+    <br />
+    <br />
+    <label for="datedepart">Date de depart :</label>
+    <input type="date"  id="datedepart" name="datedepart" required/>
+    <br />
+    <br />
+    <label for="devise">Devise :</label>
+    <select id="devise" name="devise" required>
+      <option value="EUR">EUR</option>
+      <option value="MGA">MGA</option>
+      <option value="CHF">CHF</option>
+      <option value="USD">USD</option>
+    </select>
+    <br />
+    <br />
+    <button type="submit" value="recherche">Rechercher</button>
+  </form>
+</body>
+
+</html>
