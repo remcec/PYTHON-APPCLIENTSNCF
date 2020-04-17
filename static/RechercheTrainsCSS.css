@@ -14,8 +14,8 @@ table,th,td
   border: 1px solid black;
 }
 
-.mil
+a
 {
   display : block;
-  margin: auto;
+  text-align: center;
 }
